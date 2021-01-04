@@ -20,7 +20,7 @@
 #
 
 # TODO: This needs to be converted to a custom resource
-define :mongodb_instance, # rubocop:disable ChefModernize/Definitions
+define :mongodb_instance,
        mongodb_type: 'mongod',
        action: [:enable, :start],
        logpath: '/var/log/mongodb/mongod.log',
